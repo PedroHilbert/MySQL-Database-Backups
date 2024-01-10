@@ -50,7 +50,7 @@ select
 	d_nasc_cliente, 
 	i_tipo_cliente
 from cliente
-(Quando as tabelas forem iguais, basta "insert into cliente select * from cliente_aux;)
+(Quando as tabelas forem iguais, basta "insert into cliente select * from cliente_aux);
 
 -- COMO MODIFICAR OS DADOS DE UMA LINHA DA TABELA
 update cliente
