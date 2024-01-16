@@ -42,15 +42,16 @@ INSERT INTO cliente() VALUES ('01', 'Bruno', '11122233344','2002-05-30', '01');
 -- CASO COLOQUE DEFAULT COMO PADRÃO, BASTA DEIXAR DEFAULT AO INVES DO VALOR
 
 -- COMO ADICIONAR AS INFORMAÇÕES DE UMA TABELA, DENTRO DE OUTRA TABELA
-INSERT INTO cliente_aux (default, s_nome_cliente, s_cpf_cliente, d_nasc_cliente, i_tipo_cliente)
+INSERT INTO cliente_aux (default, s_nome_cliente, s_cpf_cliente, d_nasc_cliente, i_tipo_cliente);
 select 
 	i_cliente_cliente, 
 	s_nome_cliente, 
 	s_cpf_cliente, 
 	d_nasc_cliente, 
 	i_tipo_cliente
-from cliente
-(Quando as tabelas forem iguais, basta "insert into cliente select * from cliente_aux);
+from cliente (Quando as tabelas forem iguais, basta "insert into cliente select * from cliente_aux);
+
+/*
 
 -- COMO MODIFICAR OS DADOS DE UMA LINHA DA TABELA
 update cliente
@@ -122,5 +123,5 @@ count() -- CONTA A QUANTIDADE DENTRO DO PARENTESE
 day() -- PEGA O DIA DA DATA
 month() -- PEGA O MÊS DA DATA
 curdate() -- PEGA O DIA ATUAL
-
+'''
 
